@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box {
+        max-width: 50%;
+        margin: auto;
+        font-size: 12px;
+        padding: 50px;
+        clear: both;
+      }
+
+      p {
+        border: 10px solid;
+        border-color: #BC3908;
+        padding: 100px;
+        background: #F5B700;
+        font-size: 18px;
+      }
+      body {
+        background-color: #550527;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>This is a text box. I really think I let my chili sit out for too long because my stomach has definitely felt better. But I took some pepto bismol so let's see how this goes.</p>
+    </div>
+  </body>
+</html>
