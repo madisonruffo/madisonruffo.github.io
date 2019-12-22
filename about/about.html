@@ -23,13 +23,6 @@ body {
   padding-top: 20px;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 /* Style the sidenav links and the dropdown button */
 .sidenav a, .dropdown-btn {
 font-family: 'playfair display' , serif;
@@ -113,7 +106,7 @@ h3 {
 
 h4 {
     text-align: left;
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 1.5px;
     color: #95B2B8;
     padding-left: 10px;
@@ -124,6 +117,10 @@ h5 {
     font-size: 20px;
     color: #95B2B8;
     padding-left: 10px;
+}
+
+.indent {
+  text-indent: 50px;
 }
 
 .hed {
@@ -138,9 +135,8 @@ h5 {
 
 .byline {
     max-width: 900px;
-    margin: auto;
+    margin: 5px auto 5px auto;
     text-align: center;
-    font-family: 'Libre Baskerville', serif;
     font-size: 20px;
     color: #95B2B8;
 }
@@ -203,10 +199,11 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 35%;
+
 </style>
 </head>
-<body>
 
+<body>
 <div class="sidenav">
   <br>
   <h2>MADISON RUFFO</h2>
@@ -227,16 +224,27 @@ img {
 
 <div class="main">
 <h3>ABOUT</h3>
-<div class="byline">
-  <p>Madison is a freelance journalist based in New York City. She's pursing a Masters in Journalism at the Craig Newmark Graduate School of Journalism at CUNY. Madison has covered several topics including transportation, education, business, and aging, as well as beat coverage of Bay Ridge, Brooklyn. Madison currently specializes in Health and Science reporting and audio journalism.</p>
-</div>
+ <div class="byline">
+    <p style="background-color: #95B2B8;">
+        <br> <br><span style="color:#FFFFFF">Madison is a freelance journalist based in New York City. She's pursing a Masters in Journalism at the Craig Newmark Graduate School of Journalism at CUNY. Madison has covered several topics including transportation, education, business, and aging, as well as beat coverage of Bay Ridge, Brooklyn. She currently specializes in Health and Science reporting and audio journalism.</i>
+    <br> <br> <br> </p>
+            </div>
 <h4>Resume</h4>
 <h5>Education</h5>
 <div class="copy">
   <p>CUNY Craig Newmark Graduate School of Journalism – New York, N.Y.</p>
-<p>M.A. in Journalism - Expected Graduation: December 2020</p>
+<div class="indent">
+<p>M.A. in Journalism - Expected Graduation: December 2020</p></div>
+<br>
+<p>Niagara University – Lewiston, N.Y.</p> 
+<div class="indent">
+<p>Bachelor of Arts in Communication Studies</p>
+<p>Minor in Law and Jurisprudence and American Sign Language</p>
+<p>Graduation: May 2019 - Dean’s list (7 semesters)</p></div>
 </div>
-
+<h5>Experience – <a href="http://www.linkedin.com/in/madisonruffo" style="color: #95B2B8" title="FDA" target="_blank"> LinkedIn profile</a></h5>
+<div class="copy">
+  <p>Freelance Journalist - Sept. 2019 - present</p>
 </div>
 
 
