@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madison Ruffo</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 <style>
@@ -22,6 +23,13 @@ body {
   padding-top: 20px;
 }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /* Style the sidenav links and the dropdown button */
 .sidenav a, .dropdown-btn {
 font-family: 'playfair display' , serif;
@@ -40,7 +48,7 @@ font-family: 'playfair display' , serif;
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
+  color: #BFBFBF;
 }
 
 /* Main content */
@@ -53,15 +61,16 @@ font-family: 'playfair display' , serif;
 
 /* Add an active class to the active dropdown button */
 .active {
-  background-color: #CEDADA;
+  background-color: #f1f1f1;
   color: white;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color: grey;
+  background-color: #BFBFBF;
   padding-left: 8px;
+  font-size: 16px;
 }
 
 /* Optional: Style the caret down icon */
@@ -81,13 +90,33 @@ h1 {
     font-size: 50px;
     letter-spacing: 2px;
     color: #95B2B8;
-    margin-bottom: 5px;
+   
 }
+
+h2 {
+    text-align: left;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    padding-left: 10px;
+    
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    color: #95B2B8;
+    padding-left: 50px;
+}
+ 
 
 h4 {
     text-align: left;
-    font-size: 20px;
-    font-family: 'playfair display' , serif;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    color: #95B2B8;
+    padding-left: 10px;
 }
 
 .hed {
@@ -101,18 +130,18 @@ h4 {
 }
 
 .byline {
-    max-width: 620px;
+    max-width: 900px;
     margin: auto;
     text-align: center;
     font-family: 'Libre Baskerville', serif;
-    font-size: 22px;
-    color: #274060;
+    font-size: 20px;
+    color: #95B2B8;
 }
 
 .copy {
     width: 50%;
     display: block;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'playfair display' , serif;
     font-size: 17px;
     line-height: 1.8;
     text-align: left;
@@ -123,7 +152,7 @@ h4 {
 
 .quote {
     font-size: 24px;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'playfair display' , serif;
     line-height: 1.8;
     text-align: left;
     margin: 20px auto 20px auto;
@@ -134,7 +163,7 @@ h4 {
 .cap {
     width: 25%;
     display: block;
-    font-family: 'Lato', sans-serif;
+    font-family: 'playfair display' , serif;
     font-size: 9px;
     line-height: 1.8;
     text-align: center;
@@ -147,32 +176,37 @@ h4 {
 img {
    width: 100%;
    float: center;
-   padding-left: 2px;
-   padding-right: 10px;
+   padding-left: 6px;
+   padding-right: 12px;
+}
+
+.pichome {
+  display: block;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-right: 40px;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .pic {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 35%;
 </style>
 </head>
 <body>
 
 <div class="sidenav">
   <br>
-  <br>
-  <br>
+  <h2>MADISON RUFFO</h2>
   <br>
   <a href="#home">Home</a>
-   <button class="dropdown-btn">About 
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="#bio">Biography</a>
-    <a href="#resume">Resume</a>
-  </div>
+  <a href="#about">Resume</a>
    <button class="dropdown-btn">Writing 
     <i class="fa fa-caret-down"></i>
   </button>
@@ -186,11 +220,13 @@ img {
 </div>
 
 <div class="main">
-  <div class="hed">
-  <h1>Madison Ruffo</h1>
-    <h3>Freelance Journalist</h3>
+<h3>ABOUT</h3>
+<div class="byline">
+  <p>Madison is a freelance journalist based in New York City. She's pursing a Masters in Journalism at the Craig Newmark Graduate School of Journalism at CUNY. Madison has covered several topics including transportation, education, business, and aging, as well as beat coverage of Bay Ridge, Brooklyn. Madison currently specializes in Health and Science reporting and audio journalism.</p>
 </div>
+<h4>Resume</h4>
 </div>
+
 
 <script>
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
@@ -212,5 +248,3 @@ for (i = 0; i < dropdown.length; i++) {
 
 </body>
 </html> 
-
-
