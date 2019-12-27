@@ -23,13 +23,6 @@ body {
   padding-top: 20px;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 /* Style the sidenav links and the dropdown button */
 .sidenav a, .dropdown-btn {
 font-family: 'playfair display' , serif;
@@ -90,7 +83,7 @@ h1 {
     font-size: 50px;
     letter-spacing: 2px;
     color: #95B2B8;
-    margin-bottom: 5px;
+   
 }
 
 h2 {
@@ -113,8 +106,21 @@ h3 {
 
 h4 {
     text-align: left;
+    font-size: 35px;
+    letter-spacing: 1.5px;
+    color: #95B2B8;
+    padding-left: 10px;
+}
+
+h5 {
+    text-align: left;
     font-size: 20px;
-    font-family: 'playfair display' , serif;
+    color: #95B2B8;
+    padding-left: 10px;
+}
+
+.indent {
+  text-indent: 50px;
 }
 
 .hed {
@@ -128,29 +134,27 @@ h4 {
 }
 
 .byline {
-    max-width: 620px;
-    margin: auto;
+    max-width: 900px;
+    margin: 5px auto 5px auto;
     text-align: center;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 22px;
-    color: #274060;
+    font-size: 20px;
+    color: #95B2B8;
 }
 
 .copy {
     width: 50%;
-    display: block;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'playfair display' , serif;
     font-size: 17px;
-    line-height: 1.8;
+    line-height: 1.8px;
     text-align: left;
-    margin: 20px auto 20px auto;
     max-width: 700px;
-    color: #274060;
+    color: #95B2B8;
+    padding-left: 10px;
 }
 
 .quote {
     font-size: 24px;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'playfair display' , serif;
     line-height: 1.8;
     text-align: left;
     margin: 20px auto 20px auto;
@@ -161,7 +165,7 @@ h4 {
 .cap {
     width: 25%;
     display: block;
-    font-family: 'Lato', sans-serif;
+    font-family: 'playfair display' , serif;
     font-size: 9px;
     line-height: 1.8;
     text-align: center;
@@ -195,10 +199,11 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 35%;
+
 </style>
 </head>
-<body>
 
+<body>
 <div class="sidenav">
   <br>
   <h2>MADISON RUFFO</h2>
@@ -218,7 +223,30 @@ img {
 </div>
 
 <div class="main">
-<h3>Freelance Journalist</h3>
+<h3>ABOUT</h3>
+ <div class="byline">
+    <p style="background-color: #95B2B8;">
+        <br> <br><span style="color:#FFFFFF">Madison is a freelance journalist based in New York City. She's pursing a Masters in Journalism at the Craig Newmark Graduate School of Journalism at CUNY. Madison has covered several topics including transportation, education, business, and aging, as well as beat coverage of Bay Ridge, Brooklyn. She currently specializes in Health and Science reporting and audio journalism.</i>
+    <br> <br> <br> </p>
+            </div>
+<h4>Resume</h4>
+<h5>Education</h5>
+<div class="copy">
+  <p>CUNY Craig Newmark Graduate School of Journalism – New York, N.Y.</p>
+<div class="indent">
+<p>M.A. in Journalism - Expected Graduation: December 2020</p></div>
+<br>
+<p>Niagara University – Lewiston, N.Y.</p> 
+<div class="indent">
+<p>Bachelor of Arts in Communication Studies</p>
+<p>Minor in Law and Jurisprudence and American Sign Language</p>
+<p>Graduation: May 2019 - Dean’s list (7 semesters)</p></div>
+</div>
+<h5>Experience – <a href="http://www.linkedin.com/in/madisonruffo" style="color: #95B2B8" title="FDA" target="_blank"> LinkedIn profile</a></h5>
+<div class="copy">
+  <p>Freelance Journalist - Sept. 2019 - present</p>
+</div>
+
 
 <script>
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
